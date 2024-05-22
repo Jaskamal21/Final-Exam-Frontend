@@ -1,0 +1,53 @@
+<!-- addgoal.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Pass a JavaScript variable to a partial in EJS -->
+  <%- include('partials/head.ejs', { title }) %>
+
+  <body>
+    <%- include('partials/navbar2') %>
+
+    <div class="register">
+      <div class="create">
+        <h2>Signup</h2>
+        <form action="/user/signup" method="POST">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value="user@example.com"
+            required
+          />
+          <br />
+
+          <label for="password">Password:</label>
+          <input
+            value=""
+            type="password"
+            id="password"
+            name="password"
+            required
+          />
+          <br />
+
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" />
+          <br />
+
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" />
+          <br />
+
+          <label for="phoneNumber">Phone No.:</label>
+          <input type="number" id="phoneNumber" name="phoneNumber" />
+          <br />
+
+          <button type="submit">Signup</button>
+        </form>
+      </div>
+    </div>
+
+    <%- include('partials/footer') %>
+  </body>
+</html>

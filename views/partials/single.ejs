@@ -1,0 +1,9 @@
+    
+    <% 
+    function formatDate(dateString) {
+        const date = new Date(dateString);
+        // Format the date as desired (e.g., YYYY-MM-DD)
+        const formattedDate = date.toLocaleDateString('en-en', { year: 'numeric', month: 'long', day: 'numeric' });
+        return formattedDate;
+    } 
+    %>

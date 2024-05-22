@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body {
+  /* background-color: rgb(241, 210, 71); */
+  background-image: url(/img/back.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: white;
+}
+
+.register .create {
+  padding: 10px 30px;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 50px;
+}
+
+.login .create {
+  padding: 50px 30px;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 50px;
+}
+
+.navbar {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.navbar h1 {
+  color: white;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+  color: #ffffff;
+}
+.navbar a:not(.new-item-link):hover {
+  background-color: #000000;
+  border-radius: 20px;
+}
+
+
+a.new-item-link {
+  color: white;
+  border-radius: 20px;
+}
+
+a.new-item-link:hover {
+  /* color: white; */
+  background-color: #000000;
+}
+
+.content {
+  display: inline-block;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 50px;
+  width: 30%;
+  margin-left: 136px ;
+  padding: 20px;
+  color: white;
+}
+
+.create {
+  padding: 10px;
+  margin-top: 0px;
+  color: white;
+}
+
+/* item previews / list */
+.item-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.item-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.5);
+}
+.item-preview h2 {
+  display: inline;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 8px;
+}
+.item-preview a{
+  text-decoration: none;
+}
+
+/* item details page */
+.item-details h2 {
+  display: inline;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 10px;
+}
+.item-details div {
+  margin: 20px 0;
+}
+.item-details button {
+  background: #000000;
+  color: #ffffff;
+  border: 0;
+  padding: 8px;
+  margin-top: 4px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Common styles for create and update */
+.create,
+.update {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.create label,
+.update label {
+  text-align: left;
+  display: block;
+}
+
+.create h2,
+.update h2 {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.create input,
+.update input,
+.create textarea,
+.update textarea,
+.create select,
+.update select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+  color: #000000;
+  font-weight: bold;
+}
+
+.create button,
+.update button {
+  background: #000000;
+  color: #ffffff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Specific styles for action-form */
+.action-form {
+  display: inline-block;
+  margin-right: 10px; /* Adjust margin as needed */
+}
+
+a.update {
+  background: #000000;
+  color: #ffffff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Make it a block element */
+  width: auto; /* Reset width */
+  height: auto; /* Reset height */
+}
+
+footer {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid #030303;
+  color: #000000;
+}
+
+footer p {
+  color: white;
+
+}
